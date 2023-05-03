@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <style>
+
 body{
     padding-top: 56px;
 }
-.jumbotron{
+
+/* header*/
+.jumbotron{ 
     background-color: aqua;
     background-image: url("/img/pet.jpg");
     height: 400px;
@@ -33,6 +36,38 @@ body{
           color        : #fff;
           text-shadow: 0px 0px;  
       }
+
+
+.service-style{
+    margin-top: 15px;
+    background-color: #fafbfc;
+}
+
+.text-green{
+    color: #00bd8e;
+}
+
+
+/*Garis melintang di judul section service*/
+
+h2:before,
+h2:after {
+ background-color: #0b9b6b;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+h2:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h2:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
 
 
 </style>
@@ -80,14 +115,147 @@ body{
 
     <!---Service-->
 
-     <section class="service">
+     <section id="services" class="service-style container-fluid container-fluid-max" >
+
+    <div class="row text-center ">
+    
+    
+        <div class="col-12 pb-4">
+           <h2 class="display-4 text-center mb-5">Mengapa Harus Memilih Kami?</h2>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+           
+            <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-list-ol fa-stack-1x text-white"></i>
+            </span>
+
+            <h3>Fasilitas Oke</h3>
+            <p>Fasilitas Rehab dan Kesehatan Terbaik.</p>  
+
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-lg-3">
+
+            <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-laptop-code fa-stack-1x text-white"></i>
+            </span>
+            
+            <h3>Sistem Kesehatan</h3>
+            <p>Sistem Terbaru Untuk Memantau Kondisi Pet.</p>  
+        
+        </div>
+             
+        <div class="col-12 col-sm-6 col-lg-3">
+            
+            <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-money-bill fa-stack-1x text-white"></i>
+            </span>
+
+            <h3>Biaya Terjangkau</h3>
+            <p>Biaya Terbaik Sesuai Dengan Pelayanan.</p>  
+        </div>
+             
+        
+        <div class="col-12 col-sm-6 col-lg-3">
+               
+            <span class="fa-stack fa-2x">
+            <i class="fas fa-circle fa-stack-2x text-green"></i>
+            <i class="fas fa-chart-line fa-stack-1x text-white"></i>
+            </span>
+               
+            <h3>Terarah</h3>
+            <p>Sesuai Prosedur Pet Shop Internasional.</p>  
+        </div>
+    
+
+        <div class="col-12 pt-3 mb-5">
+            <a class="btn btn-danger btn-lg" href="#" role="button">Service Lainnya</a>
+        </div>
+
+    
+    </div>
         
     </section>
 
+    
     <!---Product-->
 
-     <section class="product">
+     <section id="product" class="container">
+       
+        <div class="row text-center">
         
+            <div class="col-12 pb-4">
+                <h2 class="display-4 text-center mb-5">Produk Kami</h2>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                
+                <div class="card">
+                    <img class="card-img-top" style="max-height: 400px;" src="/img/cat.jpg"></img>
+                    <div class="card-header">PET 1</div>
+                    <div class="card-body" style="min-height: 250px;">
+                        <h4 class="card-title">Paket Perawatan Bulanan 1</h4>
+                        <p class="card-text">Mencakup Semua Perawatan dasar Pet, Mandi, Salon, Potong Kuku</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-info">Detail dan Harga</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4 mb-4">
+                
+                <div class="card">
+                    <img class="card-img-top" style="max-height: 400px;" src="/img/cat.jpg"></img>
+                    <div class="card-header">PET 1</div>
+                    <div class="card-body" style="min-height: 250px;">
+                        <h4 class="card-title">Paket Perawatan Bulanan 2</h4>
+                        <p class="card-text">Mencakup Semua Perawatan dasar Pet, Mandi, Salon, Potong Kuku + Perawatan Bulu</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-info">Detail dan Harga</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-md-4 mb-4">
+                
+                <div class="card">
+                    <img class="card-img-top" style="max-height: 400px;" src="/img/cat.jpg"></img>
+                    <div class="card-header">PET 1</div>
+                    <div class="card-body" style="min-height: 250px;">
+                        <h4 class="card-title">Paket Perawatan Bulanan 3</h4>
+                        <p class="card-text">Mencakup Semua Perawatan dasar Pet, Mandi, Salon, Potong Kuku + Perawatan Bulu + Wishkas 1 Pack</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-info">Detail dan Harga</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            
+        
+        </div>
+
+
     </section>
 
     <!---About-->
